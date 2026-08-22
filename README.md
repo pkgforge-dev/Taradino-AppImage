@@ -3,7 +3,7 @@
 # Taradino-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Taradino-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Taradino-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/Taradino-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Taradino-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/Taradino-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Taradino-AppImage/releases/latest)
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Taradino-AppImage)](https://github.com/pkgforge-dev/Taradino-AppImage/releases/latest)
 
 <p align="center">
