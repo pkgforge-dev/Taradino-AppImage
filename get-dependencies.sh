@@ -6,9 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    cmake      \
-    sdl2_mixer
+pacman -Syu --noconfirm cmake sdl2_mixer
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -18,7 +16,7 @@ echo "Building Taradino..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/fabiangreffrath/taradino"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone "$REPO" ./Taradino
+git clone --depth 1 "$REPO" ./Taradino
 echo "$VERSION" > ~/version
 
 cd ./Taradino
