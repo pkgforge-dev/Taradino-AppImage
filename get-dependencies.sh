@@ -20,9 +20,6 @@ git clone --depth 1 "$REPO" ./Taradino
 echo "$VERSION" > ~/version
 
 cd ./Taradino
-mkdir -p build && cd build
-cmake .. \
-    -DCMAKE_BUILD_TYPE=Release \
-	-DCMAKE_INSTALL_PREFIX=/usr
-make -j$(nproc)
-make install
+cmake -S ./Taradino -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+cmake --build build -j$(nproc)
+cmake --install build
